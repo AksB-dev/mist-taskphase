@@ -10,9 +10,11 @@ int main()
     while (a[c]!='\0')
     c++;
     for (i = 0; i<c; i++)
+    {
     if (a[i]>=97 && a[i]<=122)
     a[i] = (((a[i]-97)+n)%26)+97;
     else if (a[i]>=65 && a[i]<=90)
     a[i] = (((a[i]-65)+n)%26)+65;
+    }
     printf("%s", a);
 }
